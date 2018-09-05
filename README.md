@@ -111,3 +111,7 @@ bootstrap:
 ```
 $ mvn spring-boot:run -Dhostname=127.0.0.1 -Dbucket=travel-sample -Dpassword=
 ```
+
+## Some changes required to make this run out of the box.
+Please refer to the checked-in application.properties.
+Also one need to create a user "travel-sample" via the couchbase console(5.x) with all the permissions for "travel-sample" bucket. This is required otherwise you will keep on getting invalid password exceptios.
